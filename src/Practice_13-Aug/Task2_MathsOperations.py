@@ -9,6 +9,7 @@
 print("You will be prompted for inputting 2 numbers. Please input higher number first and lower number second.")
 num1=float(input("Enter first number: "))
 num2=float(input("Enter second number: "))
+print("Maximum of two numbers is: ", f"{max(num1, num2):.0f}")
 print("Sum of the given numbers is: ", f"{num1+num2:.0f}")
 print("Difference of the given numbers is: ", f"{num1-num2:.0f}")
 print("Multiplication of the given numbers is: ", f"{num1*num2:.0f}")
