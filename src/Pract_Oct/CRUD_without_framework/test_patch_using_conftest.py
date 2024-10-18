@@ -1,6 +1,7 @@
 # we will get the token and booking ID details from conftest
 # and update the first & lastname of that booking-ID using patch method
 # in Patch method the payload will contain only the keys that need to be updated.
+# using below format we shall perform for other payload keys also
 
 import pytest
 import allure
@@ -35,7 +36,7 @@ def test_patch_using_configtest_file(createToken, create_booking):
     assert actual_lastname == expected_lastname
 
 
-################################SAMPLE RESPONSE USING CONFTEST#########################################
+################################SAMPLE RESPONSE USING CONFTEST #########################################
 # PS C:\Users\Praveena S\PycharmProjects\PYAutomationPractice> pytest .\src\Pract_Oct\CRUD_without_framework\test_patch_using_conftest.py -s -v --alluredir=Without_Framework_Allure_Report
 # =============================================================== test session starts ===============================================================
 # platform win32 -- Python 3.12.0, pytest-8.3.3, pluggy-1.5.0 -- C:\Users\Praveena S\AppData\Local\Programs\Python\Python312\python.exe
