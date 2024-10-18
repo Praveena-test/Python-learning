@@ -1,0 +1,28 @@
+PS C:\Users\Praveena S\PycharmProjects\PYAutomationPractice> pytest src/Pract_Oct/test_Pytest_Basic_cases.py
+=============================================================== test session starts ===============================================================
+platform win32 -- Python 3.12.0, pytest-8.3.3, pluggy-1.5.0
+rootdir: C:\Users\Praveena S\PycharmProjects\PYAutomationPractice
+plugins: allure-pytest-2.13.5, xdist-3.6.1
+collected 3 items
+
+src\Pract_Oct\test_Pytest_Basic_cases.py .Fs                                                                                                 [100%]
+
+==================================================================== FAILURES =====================================================================
+____________________________________________________________________ test_sub _____________________________________________________________________
+
+    @pytest.mark.reg
+    def test_sub():
+>       assert 1 - 1 == 2
+E       assert (1 - 1) == 2
+
+src\Pract_Oct\test_Pytest_Basic_cases.py:15: AssertionError
+================================================================ warnings summary =================================================================
+src\Pract_Oct\test_Pytest_Basic_cases.py:9
+  C:\Users\Praveena S\PycharmProjects\PYAutomationPractice\src\Pract_Oct\test_Pytest_Basic_cases.py:9: PytestUnknownMarkWarning: Unknown pytest.mark.smoke - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.smoke
+
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================================================= short test summary info =============================================================
+FAILED src/Pract_Oct/test_Pytest_Basic_cases.py::test_sub - assert (1 - 1) == 2
+=============================================== 1 failed, 1 passed, 1 skipped, 2 warnings in 0.11s ================================================

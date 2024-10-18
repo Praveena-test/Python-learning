@@ -1,0 +1,51 @@
+PS C:\Users\Praveena S\PycharmProjects\PYAutomationPractice> pytest -m reg .\src\Pract_Oct\test_Pytest_Allure_report.py -v
+=============================================================== test session starts ===============================================================
+platform win32 -- Python 3.12.0, pytest-8.3.3, pluggy-1.5.0 -- C:\Users\Praveena S\AppData\Local\Programs\Python\Python312\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Praveena S\PycharmProjects\PYAutomationPractice
+plugins: allure-pytest-2.13.5, xdist-3.6.1
+collected 6 items / 4 deselected / 2 selected
+
+src/Pract_Oct/test_Pytest_Allure_report.py::test_reg1 FAILED                                                                                 [ 50%]
+src/Pract_Oct/test_Pytest_Allure_report.py::test_reg2 PASSED                                                                                 [100%]
+
+==================================================================== FAILURES =====================================================================
+____________________________________________________________________ test_reg1 ____________________________________________________________________
+
+    @allure.title("Verify mul")
+    @allure.description("This is sample tc with Reg marking")
+    @pytest.mark.reg
+    def test_reg1():
+>       assert 1*1 == 2
+E       assert (1 * 1) == 2
+
+src\Pract_Oct\test_Pytest_Allure_report.py:20: AssertionError
+================================================================ warnings summary =================================================================
+src\Pract_Oct\test_Pytest_Allure_report.py:6
+  C:\Users\Praveena S\PycharmProjects\PYAutomationPractice\src\Pract_Oct\test_Pytest_Allure_report.py:6: PytestUnknownMarkWarning: Unknown pytest.ma
+rk.smoke - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.smoke
+
+src\Pract_Oct\test_Pytest_Allure_report.py:12
+  C:\Users\Praveena S\PycharmProjects\PYAutomationPractice\src\Pract_Oct\test_Pytest_Allure_report.py:12: PytestUnknownMarkWarning: Unknown pytest.m
+ark.smoke - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.smoke
+
+src\Pract_Oct\test_Pytest_Allure_report.py:18
+  C:\Users\Praveena S\PycharmProjects\PYAutomationPractice\src\Pract_Oct\test_Pytest_Allure_report.py:18: PytestUnknownMarkWarning: Unknown pytest.mark.reg - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.reg
+
+src\Pract_Oct\test_Pytest_Allure_report.py:24
+  C:\Users\Praveena S\PycharmProjects\PYAutomationPractice\src\Pract_Oct\test_Pytest_Allure_report.py:24: PytestUnknownMarkWarning: Unknown pytest.mark.reg - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.reg
+
+src\Pract_Oct\test_Pytest_Allure_report.py:34
+  C:\Users\Praveena S\PycharmProjects\PYAutomationPractice\src\Pract_Oct\test_Pytest_Allure_report.py:34: PytestUnknownMarkWarning: Unknown pytest.m
+ark.sanity - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.sanity
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================================================= short test summary info =============================================================
+FAILED src/Pract_Oct/test_Pytest_Allure_report.py::test_reg1 - assert (1 * 1) == 2
+============================================== 1 failed, 1 passed, 4 deselected, 5 warnings in 0.12s ==============================================
+PS C:\Users\Praveena S\PycharmProjects\PYAutomationPractice>
